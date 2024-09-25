@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+:root {
+    --cor0:#2E3C8C;
+    --cor1:#D91521;
+    --cor2:#F9CC00;
+
+    --font-principal:arial,verdana,helvetica,sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: linear-gradient(to  right, var(--cor0), var(--cor1))
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+    color: var(--cor2);
+    text-align: center;
+    min-height: 100px;
+    padding-top: 10px;
+}
+
+header > h1 {
+    font-size: 4em;
+    font-family: var(--font-principal);
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.242);
+}
+
+header > p {
+    font-size: 1.4em;
+    color: white;
+    max-width: 350px;
+    display: block;
+    margin: auto;
+    padding: 0px 10px 0px 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.395);
+}
+
+nav {
+    background-color: var(--cor1);
+    padding: 10px;
+    text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.286)
+}
+
+nav > a {
+    color: white;
+    padding: 10px;  
+}
+
+nav a:hover {
+    font-style: italic;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+main {
+    background-color: white;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.268);
+    text-align: justify;
+}
+
+main img {
+    width: 40%;
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+
+main h2 {
+    color: var(--cor2);
+    background-image: linear-gradient(to right, var(--cor0), var(--cor1), transparent);
+    padding: 4px;
+    text-indent: 5px;
+}
+
+main p {
+    margin: 12px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 2em;
+}
+
+aside {
+    background-color: #2e3c8c8e;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.46);
+}
+
+aside > h3 {
+    color: var(--cor2);
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    text-indent: 5px;
+}
+
+aside > ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    line-height: 1.5em;
+}
+
+footer {
+    color: var(--cor2);
+    background-image: linear-gradient(to right, var(--cor0),var(--cor1));
+    padding: 8px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+footer  a {
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor2);
+}
