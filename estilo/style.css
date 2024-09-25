@@ -73,7 +73,7 @@ main {
 }
 
 main img {
-    width: 40%;
+    width: 60%;
     display: block;
     margin: auto;
     padding: 20px;
@@ -97,7 +97,8 @@ aside {
     background-color: #2e3c8c8e;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.46);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.292);
+    margin-bottom: 20px;
 }
 
 aside > h3 {
