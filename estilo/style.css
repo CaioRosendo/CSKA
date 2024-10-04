@@ -62,6 +62,8 @@ menu {
     padding: 10px;
     text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.286);
     display: none;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 menu > a {
