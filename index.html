@@ -7,8 +7,9 @@
     <link rel="shortcut icon" href="favicon.ico" type="cska">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/MQ.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>
             CSKA ETERNO
@@ -19,10 +20,12 @@
     </header>
     <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
     <menu id="itens">
-        <a href="#">Integrantes</a><br>
-        <a href="#">Futebol</a><br>
-        <a href="#">Eventos</a><br>
-        <a href="#">Fotos</a>
+        <ul>
+            <li><a href="#">Integrantes</a></li>
+            <li><a href="#">Futebol</a></li>
+            <li><a href="#">Eventos</a></li>
+            <li><a href="#">Fotos</a></li>
+        </ul>
     </menu>
     <main>
         <article>
@@ -106,7 +109,13 @@
             } else {
                 itens.style.display = 'block'
             }
-            
+        }
+        function mudouTamanho(){
+            if (window.innerWidth >= 768) {
+                itens.style.display ='block'
+            } else {
+                itens.style.display ='none'
+            }
         }
         
     </script>
