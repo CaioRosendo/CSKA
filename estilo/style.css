@@ -54,7 +54,7 @@ span#burger {
 }
 
 span#burger:hover {
-    color: black;
+    color: var(--cor0);
 }
 
 menu {
